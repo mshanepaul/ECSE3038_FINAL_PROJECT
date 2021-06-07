@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="designs/style_info.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <!-----header begins----->
+    <header>
+        <div class="left_area">
+            <h3>Patient<span> Dashboard</span></h3>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </header>
+    <!-----header ends----->
+
+    <!-----sidebar begins----->
+    <div class="sidebar">
+        <center>
+            <img src="images/room.jpg" class="profile_image" alt="">
+            <h4>Menu</h4>
+        </center>
+        <a href="index.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="information.html"><i class="fas fa-info"></i><span>Patient Information</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+    </div>
+    <!-----sidebar ends----->
+
+    <!-----page content begins----->
+    <div class="content">
+        <div class="container">
+            <div class="title">Patient Information</div>
+            <div class="instructions">
+                To enter new patient information, simply fill out all of the input boxes and click submit.
+                If you were directed here to edit a patients information, then simply fill out the boxes
+                you desire to change and click submit.
+            </div>
+            <form action="#">
+                <div class="user_details">
+                    <div class="input_box">
+                        <span class="details">First Name</span>
+                        <input type="text" id="first_name" placeholder="Enter the patients first name">
+                    
+                    </div>
+                    <div class="input_box">
+                        <span class="details">Last Name</span>
+                        <input type="text" id="last_name" placeholder="Enter the patient surname">
+                    
+                    </div> 
+                    <div class="input_box">
+                        <span class="details">Age</span>
+                        <input type="text" id="age" placeholder="Enter the patients age">
+                    
+                    </div>
+                    <div class="input_box">
+                        <span class="details">Patient ID</span>
+                        <input type="text" id="patient_id" placeholder="Enter the patients ID">
+                    
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-----page content ends----->
+    <script type="text/javascript" src="infoScript.js"></script>
+</body>
+</html>
