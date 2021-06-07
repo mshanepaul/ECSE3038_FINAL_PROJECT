@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="designs/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js" integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <!-----header begins----->
+    <header>
+        <div class="left_area">
+            <h3>Patient<span> Dashboard</span></h3>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </header>
+    <!-----header ends----->
+
+    <!-----sidebar begins----->
+    <div class="sidebar">
+        <center>
+            <img src="images/room.jpg" class="profile_image" alt="">
+            <h4>Menu</h4>
+        </center>
+        <a href="index.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="information.html"><i class="fas fa-info"></i><span>Patient Information</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+    </div>
+    <!-----sidebar ends----->
+
+    <!-----page content begins----->
+    <div class="content">
+        <div class="patient_data">
+            <div class="patient_img">
+                <img class="img" id="C0:33:FF:A1" src="images/user.png" alt="">
+                <div class="buttons">
+                    <div class="edit" id="C0:33:FF:A1">Edit</div>
+                    <div class="delete" id="C0:33:FF:A1">Delete</div>
+                </div>
+            </div>
+            <div class="display">
+                <div class="first_name"><span>First Name</span><span>John</span></div>
+                <div class="last_name"><span>Last Name</span><span>Doe</span></div>
+                <div class="position"><span>Position</span><span id="C0:33:FF:A1:">330</span></div>
+                <div class="patient_id"><span>Patient ID</span><span>C0:33:FF:A1</span></div>
+            </div>
+        </div>
+    </div>        
+    <!-----page content ends----->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
